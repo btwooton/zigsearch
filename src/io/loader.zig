@@ -70,7 +70,6 @@ test "loadDocument" {
         \\What day is it?
         \\We are going to the candy store.
     ;
-    std.debug.print("Document name: {s}\n", .{document.name});
     try expect(std.mem.eql(u8, document.name, expected_name));
     try expect(std.mem.eql(u8, document.text, expected_content));
 }
